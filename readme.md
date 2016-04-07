@@ -25,10 +25,12 @@ Bob Pizza is old school, and he wants a sick command line interface for this app
 ```
 
 ### Gold:
+```
 - I should be allowed to remove a tenant from an apartment so that I can track evictions/lease ends
 - I should be allowed to add a tenant to an apartment so that I can track occupancy.
 - I should be allowed to create a new apartment so that I can track new properties in my books
 - I should be allowed to create a new tenant so that I can track new tenants in my books.
+```
 
 ### DO MOAR
 If you've completed all the above features. Add more! Be creative!
