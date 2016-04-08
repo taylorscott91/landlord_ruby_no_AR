@@ -32,5 +32,75 @@ Bob Pizza is old school, and he wants a sick command line interface for this app
 - I should be allowed to create a new tenant so that I can track new tenants in my books.
 ```
 
+## Part 3 -  Refactor Using Ruby Classes
+Bob Pizza likes what you built. But he looks at your code and wants a custom made object to represent your tenants and apartments.
+
+### Step 1 - Defining our models.
+Create a `models` folder. In this folder, create two files `apartment.rb` and `tenant.rb`.
+
+Link these two files in the app.rb:
+
+```ruby
+require_relative "models/apartment"
+require_relative "models/tenant"
+```
+
+In the two files, create class definitions for an `apartment` and a `tenant`:
+
+In `models/apartment.rb`:
+
+```ruby
+class Apartment
+  # Place your code here
+end  
+```
+
+In `models/tenant.rb`:
+
+```ruby
+class Apartment
+  # Place your code here
+end  
+```
+
+Make sure all your instance variables(attributes) are accessible within the instances of your class through getter and setters methods.
+
+### Step 2 - Converting existing data into instances of the classes we've defined in Step 1.
+
+Here's some starter code:
+
+```ruby
+require_relative "data"
+require_relative "models/apartment"
+require_relative "models/tenant"
+apartments = data[:apartments]
+tenants = data[:tenants]
+ruby_apartments = []
+ruby_tenants = []
+```
+
+> We're going to use the variables `ruby_apartments` and `ruby_tenants` to differentiate between the original arrays(`apartments` and `tenants`) and the arrays we'll be putting our ruby class objects into.
+
+Using the `.each` enumerable, loop through the exisiting apartments and tenants arrays we worked with yesterday.
+
+In the loops
+  - create a new instance of a class you've defined
+  - push that new instance into the corresponding ruby array.
+
+> We can also instead use the `.map` enumerable to condense some of the above code.
+
+### Step 3 - Convert to using ruby classes
+Take all of the code you wrote in Part 1(thursday's hw). Replace all variables of `apartments` with `ruby_apartments` and all `tenants` with `ruby_tenants`
+
+Most likely, all of the code broke when converting these variables. That's because we we're using the hash syntax during thursday nights HW. Convert the enumerables you wrote for Part 1 of this assignment. The enumerables should now use the getter methods you defined earlier.
+
+Instructors will check the comments of `app.rb` for these lines of code similar to Part 1 of thursday's homework.
+
+### Step 4 - Convert the rest of your app
+
+Convert however far you got with your CLI application into using Ruby Class Objects instead of hashes.
+
 ### DO MOAR
+Complete all features.
+
 If you've completed all the above features. Add more! Be creative!
