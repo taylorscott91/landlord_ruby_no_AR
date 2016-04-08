@@ -2,6 +2,13 @@ require_relative "data"
 apartments = data[:apartments]
 tenants = data[:tenants]
 
+ruby_apartments = apartments.map do |apartment|
+  Apartment.new(apartment[:id], apartment[:address], apartment[:monthly_rent], apartment[:square_feet])
+end
+
+ruby_apartments.each do |apartment|
+  apartment.address
+end
 # First, Open the data.rb an inspect the data. Identify and write, in comments, the following:
   # Explain how the data is structured
   # What are the properties for each of the two types of hashes
