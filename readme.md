@@ -87,7 +87,7 @@ In the loops
   - create a new instance of a class you've defined
   - push that new instance into the corresponding ruby array.
 
-> We can also instead use the `.map` enumerable to condense some of the above code.
+> We can also instead use the `.map` enumerable to condense the above code that uses `.each`.
 
 ### Step 3 - Convert to using ruby classes
 Take all of the code you wrote in Part 1(thursday's hw). Replace all variables of `apartments` with `ruby_apartments` and all `tenants` with `ruby_tenants`
