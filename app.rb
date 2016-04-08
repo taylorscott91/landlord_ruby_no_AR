@@ -1,4 +1,7 @@
 require_relative "data"
+require_relative "models/apartment"
+require_relative "models/tenant"
+require_relative "helpers/ui"
 apartments = data[:apartments]
 tenants = data[:tenants]
 
@@ -66,3 +69,47 @@ end
     #     puts tenant.name
     #   end
     # end
+
+
+# App Logic - check out `helpers/ui.rb` for any methods being use that aren't defined in this file
+system "clear"
+puts "Welcome to Landlord!"
+buffer
+main_input = menu
+while main_input != "exit"
+  # Lists all addresses
+  if main_input == "1"
+    system "clear"
+    puts "Heres a list of apartments you own!"
+    ruby_apartments.each do |apartment|
+      puts apartment.address
+    end
+    puts "Hit <enter> to continue"
+  # Lists all addresses - Over View
+  # Lists all tenants
+  elsif main_input == "2"
+    system "clear"
+    puts "Heres a list of tenants you rent to!"
+    ruby_tenants.each do |tenant|
+      puts tenant.name
+    end
+    puts "Hit <enter> to continue"
+  # Lists all addresses - Over View
+  elsif main_input == "3"
+    system "clear"
+    puts "Heres a list of addresses you own!"
+    ruby_apartments.each do |apartment|
+      puts apartment.address
+      puts "Residents:"
+      apartment_tenants = ruby_tenants.select{|tenant| tenant.apartment_id == apartment.id}
+      puts "No occupants" if apartment_tenants.length == 0
+      apartment_tenants.each{|tenant| puts tenant.name}
+      buffer
+    end
+    puts "Hit <enter> to continue"
+  end
+  gets.chomp
+  system "clear"
+  puts (main_input)
+  main_input = menu
+end
