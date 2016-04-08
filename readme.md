@@ -58,7 +58,7 @@ end
 In `models/tenant.rb`:
 
 ```ruby
-class Apartment
+class Tenant
   # Place your code here
 end  
 ```
