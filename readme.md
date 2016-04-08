@@ -100,6 +100,9 @@ Instructors will check the comments of `app.rb` for these lines of code similar 
 
 Convert however far you got with your CLI application into using Ruby Class Objects instead of hashes.
 
+### BONUS -
+Create a class method `.all` for `Tenant` and/or `Apartment`. When called on the class it will return all of the instances that have been created through this class
+
 ### DO MOAR
 Complete all features.
 
