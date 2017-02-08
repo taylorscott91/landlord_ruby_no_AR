@@ -18,7 +18,7 @@ Bob Pizza is old school and he wants a sick command line interface for this app.
 ```
 - I should have a numbered interface for my application so that I can just type in a number to access different parts of my program.
 - I should be allowed an option to view all the apartments so that I can get an overview of my properties.
-- I should be allowed  an option view all the tenants so that I can get an overview of my tenants
+- I should be allowed an option view all the tenants so that I can get an overview of my tenants
 ```
 
 ### Silver
@@ -42,7 +42,7 @@ Bob Pizza likes what you built. But he looks at your code and wants a custom mad
 ### Step 3a - Defining our models.
 Create a `models` folder. In this folder, create two files `apartment.rb` and `tenant.rb`.
 
-Link these two files in the app.rb:
+Link these two files at the top of `app.rb`...
 
 ```ruby
 require_relative "models/apartment"
@@ -51,7 +51,7 @@ require_relative "models/tenant"
 
 In the two files, create class definitions for an `apartment` and a `tenant`:
 
-In `models/apartment.rb`:
+In `models/apartment.rb`...
 
 ```ruby
 class Apartment
@@ -59,7 +59,7 @@ class Apartment
 end  
 ```
 
-In `models/tenant.rb`:
+In `models/tenant.rb`...
 
 ```ruby
 class Tenant
@@ -71,7 +71,7 @@ Make sure all your instance variables(attributes) are accessible within the inst
 
 ### Step 3b - Converting existing data into instances of the classes we've defined in Step 1.
 
-Here's some starter code:
+Here's some starter code...
 
 ```ruby
 require_relative "data"
@@ -87,9 +87,9 @@ ruby_tenants = []
 
 Using the `.each` enumerable, loop through the exisiting apartments and tenants arrays we worked with yesterday.
 
-In the loops
-  - create a new instance of a class you've defined
-  - push that new instance into the corresponding ruby array.
+In the loops...
+- Create a new instance of a class you've defined
+- Push that new instance into the corresponding ruby array.
 
 > We can also instead use the `.map` enumerable to condense the above code that uses `.each`.
 
