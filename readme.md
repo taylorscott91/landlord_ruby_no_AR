@@ -95,11 +95,9 @@ In the loops
 
 ### Step 3c - Convert to using Ruby classes
 
-Take all of the code you wrote in Part 1(thursday's hw). Replace all variables of `apartments` with `ruby_apartments` and all `tenants` with `ruby_tenants`
+Take all of the code you wrote in Part 1. Replace all variables of `apartments` with `ruby_apartments` and all `tenants` with `ruby_tenants`
 
 Most likely, all of the code broke when converting these variables. That's because we we're using the hash syntax during thursday nights HW. Convert the enumerables you wrote for Part 1 of this assignment. The enumerables should now use the getter methods you defined earlier.
-
-Instructors will check the comments of `app.rb` for these lines of code similar to Part 1 of thursday's homework.
 
 ### Step 3d - Convert the rest of your app
 
