@@ -6,7 +6,7 @@ OH NOES. An up-and-coming property manager Bob Pizza has too much data now and i
 
 Read the comments in `app.rb` to follow the directions practicing enumerables
 
-> Store the enumerable methods into variables and use `puts` to verify the results of your methods
+> Store the enumerable methods into variables and use `puts` to verify the results of your methods.
 
 ## Part 2 - Build the App
 
@@ -49,7 +49,7 @@ require_relative "models/apartment"
 require_relative "models/tenant"
 ```
 
-In the two files, create class definitions for an `apartment` and a `tenant`:
+In the two files, create class definitions for an `apartment` and a `tenant`.
 
 In `models/apartment.rb`...
 
@@ -83,7 +83,7 @@ ruby_apartments = []
 ruby_tenants = []
 ```
 
-> We're going to use the variables `ruby_apartments` and `ruby_tenants` to differentiate between the original arrays(`apartments` and `tenants`) and the arrays we'll be putting our ruby class objects into.
+> We're going to use the variables `ruby_apartments` and `ruby_tenants` to differentiate between the original arrays (`apartments` and `tenants`) and the arrays we'll be putting our ruby class objects into.
 
 Using the `.each` enumerable, loop through the exisiting apartments and tenants arrays we worked with yesterday.
 
@@ -95,7 +95,7 @@ In the loops...
 
 ### Step 3c - Convert to using Ruby classes
 
-Take all of the code you wrote in Part 1. Replace all variables of `apartments` with `ruby_apartments` and all `tenants` with `ruby_tenants`
+Take all of the code you wrote in Part 1. Replace all variables of `apartments` with `ruby_apartments` and all `tenants` with `ruby_tenants`.
 
 Most likely, all of the code broke when converting these variables. That's because we we're using the hash syntax during thursday nights HW. Convert the enumerables you wrote for Part 1 of this assignment. The enumerables should now use the getter methods you defined earlier.
 
@@ -105,4 +105,4 @@ Convert however far you got with your CLI application into using Ruby Class Obje
 
 ## BONUS
 
-Create a class method `.all` for `Tenant` and/or `Apartment`. When called on the class it will return all of the instances that have been created through this class
+Create a class method `.all` for `Tenant` and/or `Apartment`. When called on the class it will return all of the instances that have been created through this class.
