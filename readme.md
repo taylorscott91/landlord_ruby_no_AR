@@ -58,7 +58,7 @@ end
 In `models/tenant.rb`:
 
 ```ruby
-class Apartment
+class Tenant
   # Place your code here
 end  
 ```
@@ -90,6 +90,7 @@ In the loops
 > We can also instead use the `.map` enumerable to condense the above code that uses `.each`.
 
 ### Step 3 - Convert to using ruby classes
+
 Take all of the code you wrote in Part 1(thursday's hw). Replace all variables of `apartments` with `ruby_apartments` and all `tenants` with `ruby_tenants`
 
 Most likely, all of the code broke when converting these variables. That's because we we're using the hash syntax during thursday nights HW. Convert the enumerables you wrote for Part 1 of this assignment. The enumerables should now use the getter methods you defined earlier.
@@ -100,10 +101,6 @@ Instructors will check the comments of `app.rb` for these lines of code similar 
 
 Convert however far you got with your CLI application into using Ruby Class Objects instead of hashes.
 
-### BONUS -
+### BONUS
+
 Create a class method `.all` for `Tenant` and/or `Apartment`. When called on the class it will return all of the instances that have been created through this class
-
-### DO MOAR
-Complete all features.
-
-If you've completed all the above features. Add more! Be creative!
